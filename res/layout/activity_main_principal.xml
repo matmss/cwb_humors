@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/energetico"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_row="0"
+        android:layout_marginLeft="10dp"
+        android:onClick="principal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/animado" />
+
+    <ImageButton
+        android:id="@+id/animado"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="principal"
+        android:layout_row="0"
+        android:src="@drawable/ativo" />
+
+    <ImageButton
+        android:id="@+id/beber"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_column="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="principal"
+        android:layout_row="0"
+        android:src="@drawable/bebado" />
+
+    <TextView
+        android:id="@+id/ativoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="40dp"
+        android:layout_row="1"
+        android:text="Energetico"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/animadoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bebado"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bebado"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_marginLeft="32dp"
+        android:text="Animado" />
+
+    <TextView
+        android:id="@+id/bebadoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ativo"
+        android:layout_centerHorizontal="true"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_marginLeft="40dp"
+        android:text="Beber" />
+
+    <ImageButton
+        android:id="@+id/doente"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_alignRight="@+id/animado"
+        android:layout_below="@+id/ativoText"
+        android:layout_column="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="44dp"
+        android:onClick="principal"
+        android:layout_row="2"
+        android:src="@drawable/doente" />
+
+    <ImageButton
+        android:id="@+id/feliz"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_column="1"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="principal"
+        android:layout_row="2"
+        android:src="@drawable/feliz" />
+
+    <ImageButton
+        android:id="@+id/nervoso"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_column="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:onClick="principal"
+        android:layout_row="2"
+        android:src="@drawable/nervoso" />
+
+    <TextView
+        android:id="@+id/doenteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_row="3"
+        android:text="Doente" />
+
+    <TextView
+        android:id="@+id/FelizText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_row="3"
+        android:text="Feliz" />
+
+    <TextView
+        android:id="@+id/NervosoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_marginLeft="35dp"
+        android:text="Nervoso" />
+    
+    <ImageButton
+        android:id="@+id/romantico"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_alignRight="@+id/romantico"
+        android:layout_below="@+id/ativoText"
+        android:layout_column="0"
+        android:onClick="principal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_row="4"
+        android:src="@drawable/romantico" />
+
+    <ImageButton
+        android:id="@+id/semdinheiro"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_column="1"
+        android:layout_marginLeft="20dp"
+        android:onClick="principal"
+        android:layout_marginTop="44dp"
+        android:layout_row="4"
+        android:src="@drawable/sem_dinheiro" />
+
+    <ImageButton
+        android:id="@+id/triste"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:onClick="principal"
+        android:layout_column="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_row="4"
+        android:src="@drawable/triste" />
+    
+    <TextView
+        android:id="@+id/romanticoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_row="5"
+        android:layout_marginLeft="20dp"
+        android:text="Romantico" />
+
+    <TextView
+        android:id="@+id/SemDinheiroText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="5"
+        android:layout_marginLeft="22dp"
+        android:text="Sem Dinheiro" />
+
+    <TextView
+        android:id="@+id/TristeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:layout_marginLeft="42dp"
+        android:text="Triste" />
+    
+    <Button
+        android:id="@+id/CadastroCoordenada"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:textSize="12dp"
+        android:layout_alignRight="@+id/romantico"
+        android:layout_below="@+id/ativoText"
+        android:text="Cadastrar Ponto"
+        android:onClick="cadastroCoordenadas"
+        android:layout_column="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_row="6" />
+
+</GridLayout>
